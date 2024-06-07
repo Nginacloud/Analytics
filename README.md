@@ -11,7 +11,11 @@ UNDATA, UNESCO
 - Excel - data cleaning
 - SQL server - Data analysis and report [Download here][]
 ### Data cleaning and preparation(process)
-### Eploratory analysis
+Data loading and inspection
+Missing values
+cleaning and formating
+### Eploratory data analysis
+exploring data to answer key questions
 1. overall children
 2. number of schools
 3. resources
