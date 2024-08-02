@@ -24,7 +24,8 @@ This project demonstrates how to use Python and SQL to perform data analysis on 
 
 ## Data Sources ##
 The dataset contains documentation about the weather conditions for the year 2012. The data ranges from Date/Time	Temperature,	Dew Point, Humidity,	Wind Speed in km/h,	Visibility in km	Pressure and Weather conditions.
-![image](https://github.com/user-attachments/assets/726bc13b-97a3-4e6a-ac42-5a40cdb05e85)
+(Date/Time	Temp_C	Dew Point Temp_C	Rel Hum_%	Wind Speed_km/h	Visibility_km	Press_kPa	Weather)
+
 
 For the whole set, [Download Here](https://www.kaggle.com/datasets/ayushmi77al/weather-data-set-for-beginners)
 ## Techniques and tools ##
@@ -50,7 +51,7 @@ print(df)
 clear_records = df[df['Weather']=='Clear']
 print(clear_records)
 ```
-![image](https://github.com/user-attachments/assets/49b984fe-1d85-4337-9bb7-968069312f19)
+![alt text](image-1.png)
 
   4. Speed was exactly 4km/h
 ```python
@@ -90,14 +91,14 @@ Output: 308
 mean_weather_condition = df.groupby('Weather_Condition').mean()
 print(mean_weather_condition)
 ```
-![image](https://github.com/user-attachments/assets/916bbd35-05c2-4c9c-b609-16a803174e0c)
+![alt text](image-2.png)
 
   10. instace where weather is clear and relative humidity > 50, or visibility > 40
 ```python
 clear_weather_rel_hum_visibility_filter = df[(df['Weather_Condition']== 'Clear')& (df['Rel Hum_%'] > 50) | (df['Visibility_km']>40)]
 print(clear_weather_rel_hum_visibility_filter)
 ```
-![image](https://github.com/user-attachments/assets/7712317a-5d53-4330-a969-739db10d27d1)
+![alt text](image-3.png)
 
   11. Count weather conditions that include snow
 ```python
