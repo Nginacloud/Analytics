@@ -1,1 +1,118 @@
 *!.vscode/
+# Ignore VirtualBox files
+/.VirtualBox/
+
+# Ignore shell history files
+/.bash_history
+
+# Ignore conda files
+/.conda/
+/.condarc
+/.continuum/
+
+# Ignore dbus keyrings
+/.dbus-keyrings/
+
+# Ignore global git config
+/.gitconfig
+
+# Ignore idle config
+/.idlerc/
+
+# Ignore Jupyter-related files
+/.ipynb_checkpoints/
+/.ipython/
+/.jupyter/
+/.local/
+/.matplotlib/
+/.pyforest/
+/.spyder-py3/
+/.streamlit/
+
+# Ignore SSH files
+/.ssh/
+
+# Ignore Vagrant files
+/.vagrant.d/
+/.vagrant/
+
+# Ignore vim info files
+/.viminfo
+
+# Ignore wakatime files
+/.wakatime-internal.cfg
+/.wakatime.cfg
+/.wakatime.log
+/.wakatime/
+
+# Ignore webdriver manager files
+/.wdm/
+
+# Ignore personal directories
+/3D Objects/
+/AppData/
+/B.law/
+/BIBL222/
+/BMGT/
+/Cisco Packet Tracer 8.2.0/
+/Comms/
+/Contacts/
+/Data project vation/
+/Downloads/
+/Favorites/
+/IntelGraphicsProfiles/
+/Jedi/
+/Links/
+/Microsoft/
+/OneDrive/
+/Plotting bs.ipynb
+/Plotting bs2.ipynb
+/Project1/
+/Saved Games/
+/Searches/
+/Tracing/
+/Videos/
+/VirtualBox VMs/
+/Week 1/
+/anaconda3/
+/bible/
+/comp/
+/fifa dataset/
+/jumia_scraper/
+/myproject/
+/startup/
+/zero_day/
+
+# Ignore temporary or miscellaneous files
+/Sample-1.ipynb
+/Untitled-1.ipynb
+/argv.json
+/extensions/
+/impot pandas as pd.py
+/launch.json
+/OneDriveimp.png
+/README.md
+/[export_file].sql
+/ntuser.dat.LOG1
+/ntuser.dat.LOG2
+/ntuser.ini
+/pspp.jnl
+/Untitled Folder 2/
+/Untitled Folder 6/
+/Untitled Folder/
+/Untitled.ipynb
+/Untitled1.ipynb
+/Untitled2.ipynb
+/Untitled3.ipynb
+/Untitled4.ipynb
+/Vagrantfile
+
+# Ignore any files in specific directories
+/3.1/
+/3.2/
+/4.1/
+/JumiaSraper.ipynb
+/NTUSER.DAT
+/NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+/NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+/NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
