@@ -51,7 +51,7 @@ print(df)
 clear_records = df[df['Weather']=='Clear']
 print(clear_records)
 ```
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/1956d72e-28a5-4951-b934-838a11d89099)
 
   4. Speed was exactly 4km/h
 ```python
@@ -91,14 +91,16 @@ Output: 308
 mean_weather_condition = df.groupby('Weather_Condition').mean()
 print(mean_weather_condition)
 ```
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/5cec79cd-2256-4a37-9d2c-3cdce538f7e5)
+
 
   10. instace where weather is clear and relative humidity > 50, or visibility > 40
 ```python
 clear_weather_rel_hum_visibility_filter = df[(df['Weather_Condition']== 'Clear')& (df['Rel Hum_%'] > 50) | (df['Visibility_km']>40)]
 print(clear_weather_rel_hum_visibility_filter)
 ```
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/0686d909-9fef-4247-9242-1b506f57f03e)
+
 
   11. Count weather conditions that include snow
 ```python
