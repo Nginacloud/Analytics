@@ -1,5 +1,5 @@
 ### WEATHER DATASET ###
-This repository contains python and sql scripts showing EDA of occurences in data manipulation and analysis like counts, filtered records, checking for NULL and mean values.
+This repository contains python and some sql scripts showing EDA of occurences in data manipulation and analysis like counts, filtered records, checking for NULL and mean values.
 ## OVERVIEW ##
 This project demonstrates how to use Python and SQL to perform data analysis on a weather dataset. The script includes the following operations:
 
@@ -92,7 +92,17 @@ mean_weather_condition = df.groupby('Weather_Condition').mean()
 print(mean_weather_condition)
 ```
 ![image](https://github.com/user-attachments/assets/5cec79cd-2256-4a37-9d2c-3cdce538f7e5)
-
+```sql
+#sql
+select Weather,
+	round(avg(Temp_C),2) as avg_temperature,
+    round(avg(`Dew Point Temp_C`), 2) as avg_dewpoint,
+    round(avg(`Rel Hum_%`), 2) as avg_humidity,
+    round(avg(`Wind Speed_km/h`), 2) as avg_wind_speed,
+    round(avg(Visibility_km), 2) as avg_visibility,
+    round(avg(Press_kPa), 2) as avg_pressure
+ from `weather data` group by Weather;
+```
 
   10. instace where weather is clear and relative humidity > 50, or visibility > 40
 ```python
@@ -101,6 +111,12 @@ print(clear_weather_rel_hum_visibility_filter)
 ```
 ![image](https://github.com/user-attachments/assets/0686d909-9fef-4247-9242-1b506f57f03e)
 
+```sql
+#sql
+select * from `weather data`
+where (Weather = 'clear'and `Rel Hum_%` > 50) 
+or Visibility_km > 40;
+```
 
   11. Count weather conditions that include snow
 ```python
@@ -108,4 +124,9 @@ snow_condition_count = df[df['Weather_Condition'].str.contains('Snow', case=Fals
 print(snow_condition_count)
 ```
 Output: 583
+```sql
+#sql
+select count(*) from `weather data`
+where Weather like '%snow%';
+```
 
