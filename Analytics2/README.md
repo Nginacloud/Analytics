@@ -33,11 +33,11 @@ df = pd.read_csv(r'C:\Users\USER\OneDrive\Desktop\Project1\1. Weather Data.csv')
 print(df)
 ```
 
-- Handling missing / null values
+- Handling missing / null values - no null values found
 ```python
 print(df.isnull().sum())
 ```
-[result](https://github.com/user-attachments/assets/9c718f73-3a4e-4972-bcb7-7f8fec7a88c3)
+![alt text](image-5.png)
 
 
 ## Statistical Summary
@@ -46,13 +46,13 @@ Descriptive statistics to understand central tendency and spread of data
 ```python
 print(df.describe())
 ```
-![Describe](https://github.com/user-attachments/assets/d4219aa5-79ce-480b-89b4-6d29a6d24610)
+![alt text](image-4.png)
 
 ```python
 correlation_matrix = df.corr()
 print(correlation_matrix)
 ```
-![image](https://github.com/user-attachments/assets/1b17d29e-2612-466a-81f1-f16ff0a42179)
+![alt text](image-3.png)
 
 
 
@@ -65,7 +65,7 @@ plt.xlabel('Date')
 plt.ylabel('Wind Speed km/h')
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/54c8d896-6cdd-43c9-892a-efc7490b6bcd)
+![alt text](image-2.png)
 
 
 Correlation
@@ -76,7 +76,7 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix')
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/02b1cd55-4028-4160-88c8-14346d69be31)
+![alt text](image-1.png)
 
 
 
@@ -95,7 +95,7 @@ plt.xticks(rotation=0)
 plt.legend(title='Weather Type', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/455ac4e8-2209-403b-8f5d-622fce0d8aa8)
+![alt text](image.png)
 
 Evident that the weather is mainly clear, and is the consistent condition throughout the year
 
