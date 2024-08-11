@@ -4,12 +4,12 @@ A brief overview of what the analysis process will look like.
 
 ## Table of Contents
 - [Installation](#installation)
-- [Data Overview and Cleaning](dataoverviewandcleaning)
-- [Statistical Summary](statisticalsummary)
-- [Data visualization](data_visualization)
-- [Weather patterns and Trends](weatherpatternsandtrends)
-- [Insights and Conclusions](insightsandconclusions)
-- [Recommendations ](recommendations)
+- [Data overview and Cleaning](#data-overview-and-cleaning)
+- [Statistical Summary](#statistical-summary)
+- [Data visualization](#data-visualization)
+- [Weather patterns and Trends](#weather-patterns-and-trends)
+- [Insights and Conclusions](#insights-and-conclusions)
+- [Recommendations ](#recommendations)
 
 ## Installation
 
