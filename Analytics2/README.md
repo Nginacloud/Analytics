@@ -37,7 +37,7 @@ print(df)
 ```python
 print(df.isnull().sum())
 ```
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/3053dd1a-8e5f-46d6-90a0-484841da2a79)
 
 
 ## Statistical Summary
@@ -46,15 +46,14 @@ Descriptive statistics to understand central tendency and spread of data
 ```python
 print(df.describe())
 ```
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/79be751d-c41a-4acb-af7f-52e46f6b273d)
+
 
 ```python
 correlation_matrix = df.corr()
 print(correlation_matrix)
 ```
-![alt text](image-3.png)
-
-
+![image](https://github.com/user-attachments/assets/01153629-8302-4933-8aee-7a82ca01d496)
 
 ## Data visualization
 ```python
@@ -65,7 +64,7 @@ plt.xlabel('Date')
 plt.ylabel('Wind Speed km/h')
 plt.show()
 ```
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/d94f0edc-081b-44ca-b86f-7a0270313ab0)
 
 
 Correlation
@@ -76,8 +75,7 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix')
 plt.show()
 ```
-![alt text](image-1.png)
-
+![image](https://github.com/user-attachments/assets/63546de7-fcfa-4116-b00b-ce4678721bed)
 
 
 ## Weather patterns and Trends
@@ -95,7 +93,7 @@ plt.xticks(rotation=0)
 plt.legend(title='Weather Type', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.show()
 ```
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/5cc864f9-a521-4f70-b6e0-3682251be396)
 
 Evident that the weather is mainly clear, and is the consistent condition throughout the year
 
