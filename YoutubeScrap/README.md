@@ -7,7 +7,8 @@ Analyze YouTube channels in Kenya to understand video content trends, subscriber
 ## Tools
 
 * Python
-* YouTube Data API - API key AIzaSyDDIQu1ZiRt7rkzb7Ak0KAZAMW86X4udQ0
+* YouTube Data API - API key 
 * Requests
 * Pandas
 * Matplotlib and Seaborn
+* isodate
