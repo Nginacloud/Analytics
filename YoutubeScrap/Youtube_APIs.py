@@ -32,34 +32,3 @@ for item in kenyan_channels['items']:
     print(f"Chanel Name: {channel_title}")
     print(f"Channel Id: {channel_id}")
     print(f"Description: {description}")
-
-
-def fetch_youtube_data(youtube, channel_ids):
-    
-    # Fetch channel details
-    channel_data = get_channel_details(youtube, channel_ids)
-    
-    # Initialize a list to collect video details DataFrames
-    all_video_info = []
-
-    # Loop through each channel to get video details
-    for idx, row in channel_data.iterrows():
-        playlist_id = row['playlistId']
-        video_ids = get_video_ids(youtube, playlist_id)
-        video_info_data = get_video_details(youtube, video_ids)
-        all_video_info.append(video_info_data)
-
-    
-    video_info_data_combined = pd.concat(all_video_info, ignore_index=True)
-
-    # Merge channel data with combined video details
-    final_data = pd.merge(video_info_data_combined, channel_data, left_on='channelTitle', right_on='channelName', how='left')
-
-
-    print(final_data)
-    final_data.to_csv('kenyan_youtube_data1.csv', index=False)
-
-    # Return the final DataFrame for further use if needed
-    return final_data
-
-
