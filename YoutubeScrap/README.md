@@ -7,11 +7,17 @@ This will involve gathering data from YouTube, processing and analyzing it with 
 # Table of contents
 
 [Features](#features)
+
 [Tools and configuration](#tools-and-configuration)
+
 [File Structure](#file-structure)
+
 [Data Cleaning Process (kenyan_youtube_data.csv file)](#data-cleaning-process-kenyan_youtube_datacsv-file)
+
 [Exploratory data analysis](#exploratory-data-analysis)
+
 [Data limitation](#data-limitation)
+
 [Extra data](#extra-data)
 
 ## Features
