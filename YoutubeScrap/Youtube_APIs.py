@@ -8,7 +8,8 @@ import googleapiclient.discovery
 import googleapiclient.errors
 from IPython.display import JSON
 
-api_key = 'AIzaSyDDIQu1ZiRt7rkzb7Ak0KAZAMW86X4udQ0'
+#api_key = os.getenv('youtube_api_key')
+api_key = ''
 base_url = 'https://www.googleapis.com/youtube/v3'
 
 def search_channels(query, max_results=10):

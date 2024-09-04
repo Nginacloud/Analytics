@@ -1,7 +1,8 @@
 # Overview
 
 YouTube is a search engine owned by Google mainly used as an online video sharing platform. It has more than 2.7 billion monthly users, as of January 2024 according to Wikipedia. 
-This is a project to analyze Kenyan YouTube channels using python and the YouTube API keys. This will involve gathering data from YouTube, processing and analyzing it with the primary goal to gather video statistics, channel information, and perform various analyses to understand trends, performance metrics, and other key insights.
+This is a project to analyze Kenyan YouTube channels using python and the YouTube API keys. For the specific channels, I hand selected top rated musicians in Kenya, no basic order. This is what is in 'YouTube_APIS.ipynb' file and could be essential with a targeted channels. 'Youtube_APIs.py' file uses keyword Kenya, that is, it scraps all channels with Kenya, KE, Ke and ke as a Keyword. 
+This will involve gathering data from YouTube, processing and analyzing it with the primary goal to gather video statistics, channel information, and perform various analyses to understand trends, performance metrics, and other key insights.
 
 ## Features
 
@@ -82,3 +83,50 @@ df_n = df[df['totalVideos'].isnull()]
 unique_titles = df_n['channelTitle'].unique()
 unique_titles
 ```
+
+## Exploratory data analysis
+
+For the EDA, the objectives were;
+
+* Show objectives by subscribers
+```python
+plt.bar(dataframe['channelTitle'], dataframe['subscribers'], color='blue')
+plt.title('Top channels by subscribers')
+plt.xlabel('Channel Title')
+plt.ylabel('Subscribers')
+plt.xticks(rotation=90)
+plt.show()
+```
+
+![Top channels by subs](image.png)
+
+* day of the week that most uploads are made
+
+```python
+day_df = pd.DataFrame(dataframe['publishDayName'].value_counts())
+weekdays = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+day_df = day_df.reindex(weekdays)
+ax = day_df.reset_index().plot.bar(x='index', y='publishDayName', rot=0)
+```
+
+![Friday](image-1.png)
+
+* length of video vs viewcount
+
+the shorter the video, the more the views
+```python
+plt.scatter(dataframe['durationSecs'], dataframe['viewCount'])
+plt.title('Durations vs Views')
+plt.xlabel('Duration (seconds)')
+plt.ylabel('Number of Views')
+plt.xticks(rotation=45)
+plt.show()
+```
+
+![alt text](image-2.png)
+
+
+
+# Data limitation
+
+The channel selection was based on my knowledge not any specific process/ metric used.
