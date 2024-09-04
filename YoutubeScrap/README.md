@@ -1,7 +1,7 @@
 # Overview
 
 YouTube is a search engine owned by Google mainly used as an online video sharing platform. It has more than 2.7 billion monthly users, as of January 2024 according to Wikipedia. 
-This is a project to analyze Kenyan YouTube channels using python and the YouTube API keys. For the specific channels, I hand selected top rated musicians in Kenya, no basic order. This is what is in 'YouTube_APIS.ipynb' file and could be essential with a targeted channels. 'Youtube_APIs.py' file uses keyword Kenya, that is, it scraps all channels with Kenya, KE, Ke and ke as a Keyword. 
+This is a project to analyze Kenyan YouTube channels using python and the YouTube API keys. For the specific channels, I hand selected top rated musicians in Kenya, no basic order. This is what is in 'YouTube_APIS.ipynb' file and could be essential with a targeted channels. 'Youtube_api_Scrap.py' file uses keyword Kenya, that is, it scraps all channels with Kenya, KE, Ke and ke as a Keyword. 
 This will involve gathering data from YouTube, processing and analyzing it with the primary goal to gather video statistics, channel information, and perform various analyses to understand trends, performance metrics, and other key insights.
 
 ## Features
@@ -21,7 +21,7 @@ This will involve gathering data from YouTube, processing and analyzing it with 
 * google-api-python-client - for accessing Youtube Data API
 * Pandas and numpy
 * Matplotlib and Seaborn - for visualization
-* YouTube API key - to access the youtube API from the [Google Developers Console]()
+* YouTube API key - to access the youtube API from the [Google Developers Console](https://developers.google.com/youtube/v3/getting-started)
 
 
 ## File Structure
@@ -130,3 +130,9 @@ plt.show()
 # Data limitation
 
 The channel selection was based on my knowledge not any specific process/ metric used.
+
+
+## Extra data
+
+'kenyan_youtube_channelsstats.csv' and 'kenyan_youtube_channelspy.csv'are products of the .py file. 
+EDA coming soon in sql script file - 'Youtube_api_EDA.sql'
