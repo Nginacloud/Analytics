@@ -4,6 +4,16 @@ YouTube is a search engine owned by Google mainly used as an online video sharin
 This is a project to analyze Kenyan YouTube channels using python and the YouTube API keys. For the specific channels, I hand selected top rated musicians in Kenya, no basic order. This is what is in 'YouTube_APIS.ipynb' file and could be essential with a targeted channels. 'Youtube_api_Scrap.py' file uses keyword Kenya, that is, it scraps all channels with Kenya, KE, Ke and ke as a Keyword. 
 This will involve gathering data from YouTube, processing and analyzing it with the primary goal to gather video statistics, channel information, and perform various analyses to understand trends, performance metrics, and other key insights.
 
+# Table of contents
+
+[Features](#features)
+[Tools and configuration](#tools-and-configuration)
+[File Structure](#file-structure)
+[Data Cleaning Process (kenyan_youtube_data.csv file)](#data-cleaning-process-kenyan_youtube_datacsv-file)
+[Exploratory data analysis](#exploratory-data-analysis)
+[Data limitation](#data-limitation)
+[Extra data](#extra-data)
+
 ## Features
 
 * YouTube Data Scraping: Extract information about videos, channels, and playlists from YouTube.
