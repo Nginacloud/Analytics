@@ -1,7 +1,7 @@
 import requests
 import csv
 cities = {"Nairobi", "Kisumu", "Eldoret", "Nakuru", "Mombasa"}
-API_Key = "ce294adfed117d6a54a1b01d507eeef0"
+API_Key = ""
 
 
 with open("weather_forecasts.csv", "w", newline="", encoding="utf-8") as f:
