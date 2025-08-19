@@ -1,7 +1,9 @@
-Weather & E-commerce Data Pipeline
+# Weather & E-commerce Data Pipeline
+
 This project establishes a comprehensive data pipeline for an e-commerce business, integrating weather data to generate actionable insights and key performance indicators (KPIs) related to delivery logistics and agricultural advisories.
 
-Table of Contents
+**Table of Contents**
+
 Project Overview
 
 Data Sources & Model
@@ -12,7 +14,7 @@ Calculated Metrics & KPIs
 
 Deliverables
 
-1. Project Overview
+## 1. Project Overview
 The goal of this project is to move from raw data to actionable business intelligence. We achieve this by:
 
 Integrating disparate data sources (weather, e-commerce orders) into a single, cohesive database.
@@ -23,16 +25,19 @@ Calculating key metrics and KPIs that directly inform business decisions.
 
 Visualizing the results in an easy-to-understand dashboard.
 
-2. Data Sources & Model
-Data Sources
+### 2. Data Sources & Model
+
+### Data Sources
 Weather Forecasts: Contains granular weather data including rainfall, wind speed, and temperature in Kelvin. This data is the foundation for all weather-related risk assessments.
 
-E-commerce Orders: Holds details about customer orders, including delivery times, cancellations, and product information.
+E-commerce products: Holds details about product name and price.
 
-Data Model
+Users: has data on the individuals making orders from the 5 cities.
+
+### Data Model
 The data model is a relational design in a PostgreSQL database, with normalized tables for weather, products, orders, and locations. This structure ensures data integrity and allows for efficient querying and joining of information.
 
-3. Data Pipeline Design
+## 3. Data Pipeline Design
 The data pipeline is designed as a daily ETL (Extract, Transform, Load) process, orchestrated by an Apache Airflow DAG. This ensures the data is fresh and the metrics are always up-to-date.
 
 The Airflow DAG is composed of the following tasks:
@@ -45,10 +50,10 @@ Metric Calculation: Another series of SQL queries compute all of the project's k
 
 Data Validation: A final task runs a set of checks to ensure the data is complete and accurate before the pipeline concludes.
 
-4. Calculated Metrics & KPIs
+## 4. Calculated Metrics & KPIs
 This project generates several key metrics and KPIs, divided into two main categories:
 
-E-commerce & Logistics KPIs
+### E-commerce & Logistics KPIs
 Daily Rainfall (mm): Total daily rainfall per city.
 
 Rain Risk Flag: A flag indicating "High Rain Risk" if daily rainfall is ≥ 5mm or there are ≥ 3 hours of rain.
@@ -57,14 +62,14 @@ Wind Risk Flag: A flag indicating "High Wind Risk" if average daily wind speed i
 
 Delivery Risk Index: A combined metric that flags "High Delivery Risk" if either the Rain or Wind Risk is high.
 
-Agriculture KPIs
+### Agriculture KPIs
 7-Day Cumulative Rainfall (mm): The total rainfall over a rolling 7-day period, critical for assessing soil moisture.
 
 Planting Window Flag: A flag indicating an "Ideal Planting Window" if the 7-day cumulative rainfall is ≥ 20mm and the average daily temperature (converted from Kelvin to Celsius) is within an optimal range (18-24°C).
 
 Weather Risk to Crops: A flag that identifies "Heavy Rain Risk" (≥ 15mm), "High Wind Risk" (≥ 15 m/s), or "Heat Stress Risk" (average temperature ≥ 25°C).
 
-5. Deliverables
+## 5. Deliverables
 Project Report: A detailed document explaining the entire project lifecycle, from data sources to the final analysis.
 
 Automated Data Pipeline: The production-ready Airflow DAG that automates the daily data process.
