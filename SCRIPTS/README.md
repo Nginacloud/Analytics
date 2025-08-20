@@ -2,6 +2,10 @@
 
 This project establishes a comprehensive data pipeline for an e-commerce business, integrating weather data to generate actionable insights and key performance indicators (KPIs) related to delivery logistics and agricultural advisories.
 
+[DATA](DATA) folder has all csv files extracted fom various sources.
+[SCRIPTS](SCRIPTS) folder has all sql and python scripts executed to get the results we now have.
+
+
 **Table of Contents**
 Project Overview
 
@@ -28,13 +32,13 @@ The goal of this project is to move from raw data to actionable business intelli
 ## 2. Data Sources
 
 **Data Sources**
-- Weather Forecasts: Contains granular weather data including rainfall, wind speed, and temperature. This data is the foundation for all weather-related risk assessments. [OpenWeatherMap](https://openweathermap.org/api)
+- [Weather_Forecasts](https://github.com/Nginacloud/Analytics/blob/main/SCRIPTS/weatherapi.py): Contains granular weather data including rainfall, wind speed, and temperature. This data is the foundation for all weather-related risk assessments. [OpenWeatherMap](https://openweathermap.org/api)
 
-- E-commerce Products: Holds details about product names and prices. [zucchini online buy](https://zucchini.co.ke/?srsltid=AfmBOopP4C6-78MEELvkAv5f3-kInduNAB24-7udXa_IdbOZbeGQ4GYk)
+- E-commerce [Products](https://github.com/Nginacloud/Analytics/blob/main/SCRIPTS/products.py): Holds details about product names and prices. [zucchini online buy](https://zucchini.co.ke/?srsltid=AfmBOopP4C6-78MEELvkAv5f3-kInduNAB24-7udXa_IdbOZbeGQ4GYk)
 
-- Users: Has data on the individuals making orders from the 5 cities.[fakerapi](https://fakerapi.it/fake-data-download)
+- [Users](https://github.com/Nginacloud/Analytics/blob/main/SCRIPTS/users.py): Has data on the individuals making orders from the 5 cities.[fakerapi](https://fakerapi.it/fake-data-download)
 
-- E-commerce Orders: Holds details about customer orders, delivery times, and cancellations 0 being not cancelled. For this I did randomisation from the csv files i already had, products and users. They did not have unique keys so i randomises product and user ids for ease in relating
+- E-commerce [Orders](https://github.com/Nginacloud/Analytics/blob/main/SCRIPTS/orders.py): Holds details about customer orders, delivery times, and cancellations 0 being not cancelled. For this I did randomisation from the csv files i already had, products and users. They did not have unique keys so i randomises product and user ids for ease in relating
 
 
 ## 3. Data Pipeline Design

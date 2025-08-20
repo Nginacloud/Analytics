@@ -13,7 +13,7 @@ soup = BeautifulSoup(response.text, 'html.parser')
 products = soup.find_all('div', class_='wbproductdes card__content')
 
 #with open("products.csv", "w", newline="", encoding="utf-8") as productfile:
-with open("products21.csv", "w", newline="", encoding="utf-8") as productfile:
+with open("products.csv", "w", newline="", encoding="utf-8") as productfile:
     fieldnames = ['Name', 'Price']
     writer = csv.DictWriter(productfile, fieldnames=fieldnames)
     writer.writeheader()
