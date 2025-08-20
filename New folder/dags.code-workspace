@@ -1,8 +1,0 @@
-{
-	"folders": [
-		{
-			"uri": "vscode-remote://wsl+ubuntu/home/ngina/workflows/dags"
-		}
-	],
-	"remoteAuthority": "wsl+Ubuntu"
-}
